@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Historial Médico Veterinario - Kyo</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #FDF8FA;
+    color: #555555;
+}
+
+header {
+    background: linear-gradient(135deg, #C1E1C1, #F8C8DC);
+    color: #405B45;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: clamp(25px, 5vw, 36px);
+}
+
+header h2 {
+    color: #648B68;
+    margin: 8px 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+.wrap {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.info,
+.card {
+    background: #FFFFFF;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(120, 100, 110, 0.08);
+}
+
+.info {
+    padding: 22px;
+    margin: 20px 0;
+    line-height: 2;
+    overflow-wrap: anywhere;
+    border: 2px solid #C1E1C1;
+}
+
+.card {
+    padding: 20px;
+    margin: 22px 0;
+    border-left: 8px solid #C1E1C1;
+}
+
+.card:nth-of-type(even) {
+    border-left-color: #F8C8DC;
+}
+
+.card h2 {
+    margin: 0 0 12px;
+    color: #648B68;
+    font-size: 23px;
+}
+
+.card:nth-of-type(even) h2 {
+    color: #C47798;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.section-title {
+    text-align: center;
+    color: #648B68;
+    margin: 35px 0 15px;
+}
+
+img,
+video {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+}
+
+img {
+    height: auto;
+    margin-top: 15px;
+}
+
+video {
+    background: #F8C8DC;
+    margin-top: 15px;
+}
+
+.caption {
+    text-align: center;
+    color: #997783;
+    font-size: 13px;
+    margin: 8px 0 22px;
+}
+
+.top {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    background: #C1E1C1;
+    color: #405B45;
+    padding: 12px 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(120, 100, 110, 0.15);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.top:hover {
+    background: #F8C8DC;
+    transform: translateY(-3px);
+}
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    color: #648B68;
+    font-size: 14px;
+    background: #F8C8DC;
+}
+
+@media (max-width: 600px) {
+    .wrap {
+        padding: 12px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .info {
+        padding: 17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<a id="top"></a>
+
+<header>
+    <h1>🐱 Historial Médico Veterinario</h1>
+    <h2>Kyo</h2>
+    <p>Ecografías • 30/06/2026</p>
+</header>
+
+<main class="wrap">
+
+    <section class="info">
+        <strong>Paciente:</strong> Kyo<br>
+        <strong>Especie:</strong> Felino<br>
+        <strong>Sexo:</strong> Macho<br>
+        <strong>Fecha del estudio:</strong> 15/09/2026<br>
+        <strong>Procedimiento:</strong> Ecografía cervical
+    </section>
+
+    <h2 class="section-title">🖼️ Imágenes diagnósticas</h2>
+
+    <section class="card">
+        <h2>Imágenes de la ecografía</h2>
+        <p>Capturas del estudio ecográfico realizado a Kyo.</p>
+
+        <img src="imagenes/imagen01.png"
+             alt="Imagen ecográfica 1">
+        <p class="caption">Imagen diagnóstica N.º 1</p>
+
+        <img src="imagenes/imagen02.png"
+             alt="Imagen ecográfica 2">
+        <p class="caption">Imagen diagnóstica N.º 2</p>
+
+        <img src="imagenes/imagen03.png"
+             alt="Imagen ecográfica 3">
+        <p class="caption">Imagen diagnóstica N.º 3</p>
+
+        <img src="imagenes/imagen04.png"
+             alt="Imagen ecográfica 4">
+        <p class="caption">Imagen diagnóstica N.º 4</p>
+    </section>
+
+    <h2 class="section-title">🩺 Videos de las ecografías</h2>
+
+    <section class="card">
+        <h2>Ecografía N.º 01</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco01.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Ecografía N.º 02</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco02.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Ecografía N.º 03</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco03.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Ecografía N.º 04</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco04.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Ecografía N.º 05</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco05.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Ecografía N.º 06</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco06.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Ecografía N.º 07</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco07.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Ecografía N.º 08</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco08.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Ecografía N.º 09</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco09.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Ecografía N.º 10</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco10.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Ecografía N.º 11</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco11.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Ecografía N.º 12</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco12.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Ecografía N.º 13</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco13.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Ecografía N.º 14</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco14.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <section class="card">
+        <h2>Ecografía N.º 15</h2>
+        <video controls preload="metadata" playsinline>
+            <source src="videos/eco15.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+</main>
+
+<footer>
+    <p>🐾 Historial ecográfico de Kyo</p>
+    <p>Estudio realizado el 15 de Septiembre de 2026.</p>
+</footer>
+
+<a href="#top" class="top">↑ Inicio</a>
+
+</body>
+</html>
